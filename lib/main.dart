@@ -5,7 +5,7 @@ void main() {
     MaterialApp(
       title: 'First App',
       debugShowCheckedModeBanner: false,
-      home: MyApp()
+      home: Tata()
       )
     );
 }
@@ -83,6 +83,24 @@ class MyApp extends StatelessWidget {
               ),
             ],
           ),
+          floatingActionButton: IconButton(
+            onPressed:() {}, 
+            tooltip:'Back', 
+            icon: Icon(Icons.arrow_back)
+            ),
+          );
+  }
+}
+
+class Tata extends StatelessWidget {
+  Widget build(BuildContext context) {
+    return Scaffold(
+          appBar: AppBar(
+            title: Text("Tata Motors"),
+            backgroundColor: Colors.yellow,
+          ),
+          
+          
           floatingActionButton: IconButton(
             onPressed:() {}, 
             tooltip:'Back', 
