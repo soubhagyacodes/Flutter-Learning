@@ -27,15 +27,22 @@ class MyApp extends StatelessWidget {
             spacing: 10,
             children: [
               const SizedBox(width: 30,),
-              Container(
+              
+             InkWell(
+              child:  Container(
                 padding: EdgeInsets.all(70),
                 decoration: BoxDecoration(color: Colors.deepOrange,),
                 child: Text('Tata Motors'),
               ),
-              Container(
-                padding: EdgeInsets.all(70),
-                decoration: BoxDecoration(color: Colors.blue,),
-                child: Text('Mahindra'),
+              onTap: () {},
+             ),
+              InkWell(
+                child: Container(
+                  padding: EdgeInsets.all(70),
+                  decoration: BoxDecoration(color: Colors.blue,),
+                  child: Text('Mahindra'),
+                ),
+                onTap: () {},
               ),
               Container(
                 padding: EdgeInsets.all(70),
